@@ -1,3 +1,5 @@
+package weeklyQuiz1;
+
 import java.util.Arrays;
 
 public class Main {
@@ -8,8 +10,8 @@ public class Main {
 
         Cart cart = new Cart(Arrays.asList(apple, shampoo, fridge));
 
-        // 10% 할인을 적용하는 Promotion 구현체
-        Promotion tenPercentOff = new Promotion() {
+        // 10% 할인을 적용하는 weeklyQuiz1.Product.Promotion 구현체
+        Product.Promotion tenPercentOff = new Product.Promotion() {
             @Override
             public double getDiscountAmount(Product product) {
                 return product.getPrice() * 0.1;

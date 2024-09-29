@@ -1,3 +1,5 @@
+package weeklyQuiz1;
+
 import java.util.List;
 
 public class Cart {
@@ -16,7 +18,7 @@ public class Cart {
         return totalWeight * 0.5; // 단위 무게당 배송료 계산
     }
 
-    public double calculateTotalPrice(Promotion promotion) {
+    public double calculateTotalPrice(Product.Promotion promotion) {
         double totalPrice = 0;
         for (Product product : products) {
             totalPrice += product.applyPromotion(promotion);
